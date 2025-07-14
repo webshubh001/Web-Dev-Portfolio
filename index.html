@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mobile_code"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/title.png" type="image/x-icon" />
+
+    <title>Web Dev Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo gradient-text">PORTFOLIO</div>
+      <div class="links">
+        <a href="#home" class="gradient-text">Home</a>
+        <a href="#about" class="gradient-text">About</a>
+        <a href="#skills" class="gradient-text">Skills</a>
+        <a href="#projects" class="gradient-text">Projects</a>
+        <a href="#contacts" class="gradient-text">Contact</a>
+      </div>
+      <div class="icon">
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <main>
+      <section class="home" id="home">
+        <img src="./images/home1.jpg" alt="" />
+        <div class="home-detail">
+          <h1 class="fade-in">
+            Hi,I'm <span class="home-nm">Shubham Karmilkar</span>
+          </h1>
+          <h2 class="fade-in2">Web Developer</h2>
+          <p class="typewriter-container" id="typewriterContainer">
+            <span class="typewriter" id="typewriter"></span
+            ><span class="cursor"></span>
+          </p>
+          <button class="home-btn" onclick="location.href='#projects'">
+            view my work
+          </button>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about-sec">
+          <div class="about-detail">
+            <h1>About Me</h1>
+            <p>
+              Hi, I’m a passionate web developer with a strong foundation in
+              front-end and back-end technologies. I specialize in building
+              responsive, user-friendly websites and web applications that solve
+              real-world problems and deliver exceptional user experiences. With
+              a deep understanding of HTML, CSS, JavaScript, and frameworks like
+              React js. I bring designs to life with clean, efficient
+              code.Whether it's building from scratch or optimizing existing
+              code, I love turning ideas into functional digital products. I'm a
+              strong believer in clean code, thoughtful design, and continuous
+              improvement.
+            </p>
+          </div>
+          <div class="fields">
+            <div class="type web">
+              <i style="color: #00c2ff" class="fa-solid fa-laptop-code"></i>
+              <h3>Website Development</h3>
+            </div>
+            <div class="type app">
+              <i style="color: #4aff00" class="material-symbols-outlined">
+                mobile_code
+              </i>
+              <h3>App Development</h3>
+            </div>
+            <div class="type site">
+              <i style="color: #006cff" class="fa-solid fa-code-branch"></i>
+              <h3>Website Hosting</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills parallelx" id="skills">
+        <h1>Tech Stack</h1>
+        <div class="skill-detail">
+          <div class="skill webdev">
+            <h3>Web Development</h3>
+            <div class="contain">
+              <div class="lang htmlf">
+                <img src="./images/html5.svg" alt="" />
+                <h5>HTML</h5>
+                <p>
+                  Skilled in writing semantic, accessible, and SEO-friendly HTML
+                  to structure web content effectively.
+                </p>
+              </div>
+              <div class="lang cssf">
+                <img src="./images/css.svg" alt="" />
+                <h5>CSS3</h5>
+                <p>
+                  Proficient in crafting responsive, visually appealing layouts
+                  using modern CSS, Flexbox, Grid, and animations.
+                </p>
+              </div>
+              <div class="lang jsf">
+                <img src="./images/js.png" alt="" />
+                <h5>JS</h5>
+                <p>
+                  Proficient in writing clean, modular JavaScript for dynamic
+                  user interfaces and client-side functionality.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="skill appdev">
+            <h3>App Development</h3>
+            <div class="contain">
+              <div class="lang android">
+                <img src="./images/android.png" alt="" />
+                <h5>ANDROID</h5>
+                <p>
+                  Skilled in developing native Android apps with smooth UI/UX,
+                  performance optimization, and modern Android architecture.
+                </p>
+              </div>
+              <div class="lang kotlin">
+                <img src="./images/kotlin.png" alt="" />
+                <h5>KOTLIN</h5>
+                <p>
+                  Develop Android applications using Kotlin, focusing on concise
+                  code, null safety, and Jetpack components.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="skill backend">
+            <h3>Backend Connectivity</h3>
+            <div class="contain">
+              <div class="lang sql">
+                <img src="./images/mysql.png" alt="" />
+                <h5>MYSQL</h5>
+                <p>
+                  Design and manage structured relational databases, ensuring
+                  data integrity, security, and efficient querying.
+                </p>
+              </div>
+              <div class="lang mongo">
+                <img src="./images/mongo.png" alt="" />
+                <h5>MONGO DB</h5>
+                <p>
+                  Build flexible and scalable NoSQL databases for
+                  high-performance web and mobile applications using
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="skill obj-oriented">
+            <h3>Obj. Oriented Paradigm</h3>
+            <div class="contain">
+              <div class="lang obj">
+                <img src="./images/java.png" alt="" />
+                <h5>JAVA</h5>
+                <p>
+                  Develop robust, object-oriented software applications and
+                  backend systems using core and advanced Java concepts.
+                </p>
+              </div>
+              <div class="lang mongo">
+                <img src="./images/python.png" alt="" />
+                <h5>PYTHON</h5>
+                <p>
+                  Apply Python for scripting, data processing, backend
+                  development, and building scalable web applications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <h1>Projects</h1>
+        <div class="inner-projects">
+          <div class="prj">
+            <img src="./images/prj3.png" alt="" />
+            <div class="prj-in">
+              <h3>Login Page</h3>
+              <p>
+                A secure and responsive login interface with form validation and
+                user-friendly design. Built with HTML, CSS, and JavaScript for
+                smooth UX.
+              </p>
+              <div class="lang-use">
+                <div class="type-lang">HTML5</div>
+                <div class="type-lang">CSS3</div>
+                <div class="type-lang">Javascript</div>
+              </div>
+              <div class="live">
+                <a
+                  href="https://webshubh001.github.io/portfolio-website/"
+                  target="_blank"
+                >
+                  <button class="live-btn">Live</button>
+                </a>
+                <a
+                  href="git@github.com:webshubh001/portfolio-website.git"
+                  target="_blank"
+                >
+                  <button class="live-btn">Github</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prj">
+            <img src="./images/prj1.png" alt="" />
+            <div class="prj-in">
+              <h3>Landing Page</h3>
+              <p>
+                A visually appealing, mobile-first landing page designed to
+                showcase a product or service. Includes call-to-action elements
+                and modern layout techniques.
+              </p>
+              <div class="lang-use">
+                <div class="type-lang">HTML5</div>
+                <div class="type-lang">CSS3</div>
+                <div class="type-lang">Javascript</div>
+              </div>
+              <div class="live">
+                <a
+                  href="https://webshubh001.github.io/PRODIGY_WD_01/"
+                  target="_blank"
+                >
+                  <button class="live-btn">Live</button>
+                </a>
+                <a
+                  href="https://github.com/webshubh001/PRODIGY_WD_01.git"
+                  target="_blank"
+                >
+                  <button class="live-btn">Github</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prj">
+            <img src="./images/prj4.png" alt="" />
+            <div class="prj-in">
+              <h3>Weather Application</h3>
+              <p>
+                A real-time weather app that fetches and displays current
+                weather data using APIs. Features location-based results and a
+                clean, intuitive UI.
+              </p>
+              <div class="lang-use">
+                <div class="type-lang">HTML5</div>
+                <div class="type-lang">CSS3</div>
+                <div class="type-lang">Javascript</div>
+              </div>
+              <div class="live">
+                <a
+                  href="https://webshubh001.github.io/WeatherApp/"
+                  target="_blank"
+                >
+                  <button class="live-btn">Live</button>
+                </a>
+                <a
+                  href="https://github.com/webshubh001/WeatherApp.git"
+                  target="_blank"
+                >
+                  <button class="live-btn">Github</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prj">
+            <img src="./images/prj5.png" alt="" />
+            <div class="prj-in">
+              <h3>Portfolio</h3>
+              <p>
+                A personal portfolio site showcasing projects, skills, and
+                contact information. Built to be responsive, accessible, and
+                easy to navigate.
+              </p>
+              <div class="lang-use">
+                <div class="type-lang">HTML5</div>
+                <div class="type-lang">CSS3</div>
+                <div class="type-lang">Javascript</div>
+              </div>
+              <div class="live">
+                <a
+                  href="https://webshubh001.github.io/portfolio-website/"
+                  target="_blank"
+                >
+                  <button class="live-btn">Live</button>
+                </a>
+                <a
+                  href="https://github.com/webshubh001/portfolio-website.git"
+                  target="_blank"
+                >
+                  <button class="live-btn">Github</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prj">
+            <img src="./images/prj2.png" alt="" />
+            <div class="prj-in">
+              <h3>Tic tac Toe</h3>
+              <p>
+                A classic Tic Tac Toe game with interactive gameplay logic using
+                JavaScript. Includes win detection, score tracking, and a simple
+                UI.
+              </p>
+              <div class="lang-use">
+                <div class="type-lang">HTML5</div>
+                <div class="type-lang">CSS3</div>
+                <div class="type-lang">Javascript</div>
+              </div>
+              <div class="live">
+                <a
+                  href="https://webshubh001.github.io/PRODIGY_WD_03/"
+                  target="_blank"
+                >
+                  <button class="live-btn">Live</button>
+                </a>
+                <a
+                  href="https://github.com/webshubh001/PRODIGY_WD_03.git"
+                  target="_blank"
+                >
+                  <button class="live-btn">Github</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <h1>Contact Me</h1>
+        <p>
+          Have a project in mind, a question, or just want to say hello? I’d
+          love to hear from you! Feel free to reach out via the form below or
+          connect with me through email or social media.
+        </p>
+        <div class="outer-div">
+          <div class="details">
+            <div class="address same">
+              <h4><i class="fas fa-map-marker-alt"></i> Address</h4>
+              <br />
+              Yavatmal,Maharashtra.
+            </div>
+
+            <div class="call same">
+              <h4><i class="fas fa-phone"></i> Phone</h4>
+              <br />
+              0987654321
+            </div>
+
+            <div class="email same">
+              <h4><i class="fas fa-envelope"></i> Email</h4>
+              <br />
+              shubhanhsajj@gmail.com
+            </div>
+          </div>
+
+          <div class="contact-me">
+            <h2>Send Message</h2>
+            <form id="contact-form">
+              <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <i class="fas fa-comment"></i>
+                <textarea
+                  name="message"
+                  rows="4"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+        <button class="back-top" onclick="location.href='#home'">
+          <svg class="svgIcon" viewBox="0 0 384 512">
+            <path
+              d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+            ></path>
+          </svg>
+        </button>
+      </section>
+    </main>
+    <footer>
+      <footer class="footer">
+        <p>© 2025 Shubham Karmilkar. All rights reserved.</p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/shubham-karmilkar-204b58293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/_shubham_karmilkar?utm_source=qr&igsh=MThtN3ppbnBib3lqbA=="
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </footer>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("vkS5mE7gg1R6Cb3S4"); //public key
+      })();
+    </script>
+  </body>
+</html>
